@@ -1,0 +1,134 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+aside {
+
+    height: 100vh;
+    width: 40%;
+    display: block;
+    background-image: url(./david-lang-photo.jpg);
+
+}
+
+
+section {
+
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    --back-color: rgb(240, 240, 240);
+
+}
+
+
+.first {
+    height: 35%;
+    background-color: var(--back-color);
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+
+.second {
+    height: 30%;
+    padding: 30px;
+}
+
+
+.third {
+
+    --btn-color: #596D48;
+
+    height: 35%;
+    padding: 40px;
+    background-color:  var(--back-color);
+}
+
+.third
+ > p {
+
+    margin-top: 18px;
+    
+
+}
+
+
+form {
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 850px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+form > div {
+
+    width: 360px;
+
+}
+
+
+input {
+    width: 220px;
+    border: #E5E7EB solid 1px;
+    border-radius: 3px;
+}
+
+
+label {
+    font-size: 0.8rem;
+    display: block;
+}
+
+
+button {
+
+    color: white;
+    background-color: var(--btn-color);
+    padding: 15px;
+    border-radius: 6px;
+    width: 200px;
+}
+
+
+input:invalid {
+    border: red solid 1px;
+}
+
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px 1px blue;
+}
+
+a {
+    text-decoration: none;
+    color: var(--btn-color);
+    font-weight: bold;
+}
+
+.first > p {
+    max-width: 60ch;
+}
