@@ -1,9 +1,15 @@
+@font-face {
+    font-family: norse-font;
+    src: url(./Norse-Bold.otf);
+}
+
+
 * {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: sans-serif, 'Times New Roman', Times, serif;
 }
 
 
@@ -18,11 +24,46 @@ aside {
 
     height: 100vh;
     width: 40%;
-    display: block;
+    display: flex;
     background-image: url(./david-lang-photo.jpg);
-
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
+div.container-logo {
+
+    margin-top: 178px;
+    height: 130px;
+    background-color: rgba(61, 51, 51, 0.205);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+    width: 80px;
+    height: 100px;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+}
+
+p.odin {
+    font-family: norse-font;
+    font-size: 4.5rem;
+    color: white;
+}
 
 section {
 
@@ -68,10 +109,11 @@ section {
  > p {
 
     margin-top: 18px;
-    
-
 }
 
+aside > p {
+    padding: 10px;
+}
 
 form {
 
@@ -110,6 +152,8 @@ button {
     padding: 15px;
     border-radius: 6px;
     width: 200px;
+    border: none;
+    font-weight: bold;
 }
 
 
